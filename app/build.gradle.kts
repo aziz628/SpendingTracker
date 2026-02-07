@@ -9,7 +9,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.budgetmanger"
+        applicationId = "com.example.spendingtracker"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

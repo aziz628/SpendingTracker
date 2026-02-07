@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BudgetManger</string>
+    <string name="app_name">Spending Tracker</string>
 
     <!--english main lang-->
 
@@ -38,7 +38,7 @@
 
     <!-- Empty transactions State -->
     <string name="empty_state_no_transactions">No Transactions Yet</string>
-    <string name="empty_state_add_transaction">Tap the + button to start tracking\nyour budget and expenses.</string>
+    <string name="empty_state_add_transaction">Tap the + button to start tracking\nyour spending and expenses.</string>
     <string name="see_all_transactions">See All</string>
 
     <!-- Create Transaction Screen -->
