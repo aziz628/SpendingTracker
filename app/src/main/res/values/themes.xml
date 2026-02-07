@@ -1,9 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.BudgetManger" parent="Theme.Material3.Light.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-
+    <!-- Use DayNight parent here -->
+    <style name="Base.Theme.BudgetManger" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Stop the OS from programmatically inverting colors -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
     </style>
 
     <style name="Theme.BudgetManger" parent="Base.Theme.BudgetManger" >
