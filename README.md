@@ -1,6 +1,6 @@
 # Spending Tracker
 
-Native Android application built for personal expense tracking and financial management.
+Native Android application  ilt for personal expense tracking and financial management.
 
 ##  Key Features
 
