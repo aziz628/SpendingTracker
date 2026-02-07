@@ -173,7 +173,7 @@ public class CreateTransactionActivity extends AppCompatActivity implements Vali
         btnIncome = findViewById(R.id.btn_income);
 
         // Set current date as default - force US locale to avoid Arabic numerals
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
         dateInput.setText(dateFormat.format(calendar.getTime()));
     }
 
@@ -273,15 +273,15 @@ public class CreateTransactionActivity extends AppCompatActivity implements Vali
 
         // Split it
         String[] parts = currentDate.split("-");
-        int day = Integer.parseInt(parts[0]);
+        int year = Integer.parseInt(parts[0]);
         int month = Integer.parseInt(parts[1]) - 1; // DatePicker uses 0-11 for months
-        int year = Integer.parseInt(parts[2]);
+        int day = Integer.parseInt(parts[2]);
 
         // setup date picker
         DatePickerDialog picker = new DatePickerDialog(this, (view, selectedYear, selectedMonth, selectedDay) -> {
             // Format back to DD-MM-YYYY
-            String newDate = String.format(Locale.US, "%02d-%02d-%04d",
-                    selectedDay, selectedMonth + 1, selectedYear); // m+1 since picker return month index 0-11
+            String newDate = String.format(Locale.US, "%04d-%02d-%02d",
+                    selectedYear, selectedMonth + 1, selectedDay); // m+1 since picker return month index 0-11
 
             // Update the input
             dateInput.setText(newDate);
@@ -300,10 +300,8 @@ public class CreateTransactionActivity extends AppCompatActivity implements Vali
         // Extract form data
         double amount = Double.parseDouble(amountInput.getText().toString());
         String note = noteInput.getText().toString().trim();
-        String displayDate = dateInput.getText().toString(); // DD-MM-YYYY format
+        String date = dateInput.getText().toString(); // DD-MM-YYYY format
         
-        // Convert date from display format (DD-MM-YYYY) to database format (YYYY-MM-DD)
-        String dbDate = convertDateToDbFormat(displayDate);
 
         // Get selected category
         int selectedPosition = categorySpinner.getSelectedItemPosition();
@@ -319,7 +317,7 @@ public class CreateTransactionActivity extends AppCompatActivity implements Vali
                 amount,
                 selectedType,
                 note,
-                dbDate, // Use converted date format
+                date, // Use converted date format
                 selectedCategory.getId()
         );
 
@@ -334,22 +332,6 @@ public class CreateTransactionActivity extends AppCompatActivity implements Vali
         }
     }
 
-    /**
-     * Convert date from display format (DD-MM-YYYY) to database format (YYYY-MM-DD)
-     */
-    private String convertDateToDbFormat(String displayDate) {
-        try {
-            // Force US locale to avoid Arabic numerals in date parsing
-            SimpleDateFormat displayFormat = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
-            SimpleDateFormat dbFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
-            
-            return dbFormat.format(displayFormat.parse(displayDate));
-        } catch (Exception e) {
-            e.printStackTrace();
-            // Fallback to current date in DB format if conversion fails - force US locale
-            return new SimpleDateFormat("yyyy-MM-dd", Locale.US).format(calendar.getTime());
-        }
-    }
 
     @Override
     public void onValidationFailed(List<ValidationError> errors) {
