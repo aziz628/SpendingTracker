@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- COLOR PALETTE (RAW COLORS)  -->
+
+    <!-- Grayscale -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey_50">#F9FAFB</color>
+    <color name="grey_100">#F3F4F6</color>
+    <color name="grey_200">#E5E7EB</color>
+    <color name="grey_300">#D1D5DB</color>
+    <color name="grey_400">#9CA3AF</color>
+    <color name="grey_500">#6B7280</color>
+    <color name="grey_600">#4B5563</color>
+    <color name="grey_700">#374151</color>
+    <color name="grey_800">#1F2937</color>
+    <color name="grey_900">#111827</color>
+
+
+
+
+    <!-- Greens -->
+    <color name="green_50">#E0F2F1</color>
+    <color name="green_100">#D1FAE5</color>
+    <color name="green_200">#A7F3D0</color>
+    <color name="green_500">#059669</color>
+    <color name="green_600">#047857</color>
+    <color name="green_700">#065F46</color>
+    <color name="green_800">#064E3B</color>
+    <color name="green_900">#022C22</color>
+
+    <!-- Reds -->
+    <color name="red_50">#FEE2E2</color>
+    <color name="red_500">#DC2626</color>
+
+    <!-- Dark Mode Raw Palette -->
+    <!-- Dark Grayscale -->
+    <color name="dark_grey_50">#121212</color>
+    <color name="dark_grey_100">#1E1E1E</color>
+    <color name="dark_grey_200">#2A2A2A</color>
+    <color name="dark_grey_300">#333333</color>
+    <color name="dark_grey_400">#404040</color>
+    <color name="dark_grey_500">#666666</color>
+    <color name="dark_grey_600">#808080</color>
+    <color name="dark_grey_700">#A0A0A0</color>
+    <color name="dark_grey_800">#B0B0B0</color>
+    <color name="dark_grey_900">#FFFFFF</color>
+
+    <!-- Dark Greens (lighter for visibility) -->
+    <color name="dark_green_50">#1B5E3F</color>
+    <color name="dark_green_100">#245D3D</color>
+    <color name="dark_green_200">#2D7D52</color>
+    <color name="dark_green_500">#66BB6A</color>
+    <color name="dark_green_600">#52A552</color>
+    <color name="dark_green_700">#4A9A4A</color>
+
+    <!-- Dark Reds (lighter for visibility) -->
+    <color name="dark_red_50">#5C2C2C</color>
+    <color name="dark_red_500">#EF5350</color>
+
+
+    <!-- SEMANTIC TOKENS (USAGE NAMES)                          -->
+
+    <!-- Backgrounds & Surfaces -->
+    <color name="background_light">@color/grey_50</color>
+    <color name="background_app">@color/grey_50</color>
+    <color name="background_input">@color/white</color>
+    <color name="surface_white">@color/white</color>
+    <color name="surface_muted">@color/grey_100</color>
+    <color name="surface_card">@color/white</color>
+    <color name="surface_translucent">@color/white_20</color> <!-- translucent means half transparent -->
+    <color name="error_banner_bg">@color/red_50</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">@color/grey_900</color>
+    <color name="text_secondary">@color/grey_500</color>
+    <color name="text_input">@color/grey_800</color>
+    <color name="text_hint">@color/grey_400</color>
+    <color name="income_text">@color/green_500</color>
+    <color name="expense_text">@color/red_500</color>
+    <color name="error_banner_text">@color/red_500</color>
+
+    <!-- Brand / Primary -->
+    <color name="primary_green">@color/green_500</color>
+    <color name="primary_green_dark">@color/green_700</color>
+    <color name="primary_green_light">@color/green_200</color>
+    <color name="primary_green_lighter">@color/green_100</color>
+
+    <!-- Status & Feedback -->
+    <color name="error_red">@color/red_500</color>
+    <color name="income_bg">@color/green_50</color>
+    <color name="expense_bg">@color/red_50</color>
+    <!--back button bg color-->
+    <color name="back_button_bg">@color/white</color>
+    <!--back button icon color-->
+    <color name="back_button_icon">@color/grey_400</color>
+
+
+    <!-- Navigation -->
+    <color name="nav_icon_default">@color/grey_400</color>
+    <color name="nav_icon_active">@color/green_500</color>
+
+    <!-- Borders & Dividers -->
+    <color name="border_light">@color/grey_200</color>
+    <color name="border_default">@color/grey_300</color>
+    <color name="divider_color">@color/grey_200</color>
+
+    <!-- Icons -->
+    <color name="icon_default">@color/grey_400</color>
+    <color name="icon_on_primary">@color/white</color>
+    <color name="menu">@color/grey_600</color>
+
+</resources>

@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- LAYOUT CONTAINERS -->
+    <style name="Container_Auth_Main">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+
+    <style name="Logo_Wrapper">
+        <item name="android:layout_width">@dimen/logo_size</item>
+        <item name="android:layout_height">@dimen/logo_size</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_lg</item>
+        <item name="android:background">@drawable/logo_background</item>
+        <item name="android:elevation">@dimen/elevation_lg</item>
+        <item name="android:rotation">-5</item>
+    </style>
+
+    <style name="Form_Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Bottom_Link_Container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- LOGO & ICON STYLES -->
+    <style name="Logo_Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/spacing_lg</item>
+        <item name="android:src">@drawable/ic_person_add</item>
+    </style>
+
+    <!-- TEXT STYLES -->
+    <style name="Title_Centered" parent="Text_Header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:text">@string/signup_title</item>
+    </style>
+
+    <style name="Subtitle_Centered" parent="Text_Subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/spacing_sm</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_xl</item>
+        <item name="android:text">@string/signup_subtitle</item>
+    </style>
+
+    <style name="Error_Text" parent="Text_Error">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_xs</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Error_Text.Last">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+
+    <style name="Link_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:text">@string/already_have_account</item>
+    </style>
+
+    <style name="Link_Text.Action">
+        <item name="android:textColor">@color/primary_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/sign_in_link</item>
+    </style>
+
+    <!-- General Service Error Banner -->
+    <style name="Error_Banner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/error_banner_bg</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+        <item name="android:textColor">@color/error_banner_text</item> <!-- Used token -->
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_md</item>
+    </style>
+
+    <!-- LOGIN PAGE STYLES -->
+    <style name="Logo_Icon.Login">
+        <item name="android:src">@drawable/ic_wallet</item>
+        <item name="android:rotation">5</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="Title_Centered.Login">
+        <item name="android:text">@string/login_title</item>
+    </style>
+
+    <style name="Subtitle_Centered.Login">
+        <item name="android:text">@string/login_subtitle</item>
+    </style>
+
+    <style name="Forgot_Password_Link">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_lg</item>
+        <item name="android:textColor">@color/primary_green</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/forgot_password_link</item>
+        <item name="android:layout_marginTop">@dimen/spacing_sm</item>
+    </style>
+
+    <style name="Save_Button.Login">
+        <item name="android:text">@string/login_button</item>
+    </style>
+
+    <style name="Link_Text.NoAccount">
+        <item name="android:text">@string/no_account</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_sm</item>
+    </style>
+
+    <style name="Link_Text.Action.SignUp">
+        <item name="android:text">@string/signup_link</item>
+    </style>
+
+    <!-- MAIN/HOME PAGE STYLES -->
+    <style name="Main_Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">@dimen/spacing_lg</item>
+        <item name="android:background">@color/background_light</item>
+    </style>
+
+    <style name="Header_Subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:text">@string/sub_title</item>
+    </style>
+
+    <style name="Header_Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_xl</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">Default</item>
+
+    </style>
+
+    <style name="Logout_Button">
+        <item name="android:layout_width">@dimen/icon_button_size</item>
+        <item name="android:layout_height">@dimen/icon_button_size</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+        <item name="android:background">@drawable/back_btn_bg</item>
+        <item name="android:src">@drawable/ic_logout</item>
+        <item name="android:tint">@color/error_red</item>
+    </style>
+
+    <style name="Balance_Card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+        <item name="android:background">@drawable/balance_card_bg</item>
+        <item name="android:padding">@dimen/spacing_lg</item>
+    </style>
+
+    <style name="Balance_Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/total_balance_title</item>
+        <item name="android:textColor">@color/primary_green_light</item>
+        <item name="android:textSize">@dimen/text_xs</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="Balance_Value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_xs</item>
+        <item name="android:text">@string/placeholder_balance</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/balance_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Income_Expense_Row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:baselineAligned">false</item>
+    </style>
+
+    <style name="Stat_Container">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Stat_Icon_Wrapper">
+        <item name="android:layout_width">@dimen/stat_icon_wrapper</item>
+        <item name="android:layout_height">@dimen/stat_icon_wrapper</item>
+        <item name="android:background">@drawable/circular_bg_translucent</item>
+    </style>
+
+    <style name="Stat_Icon">
+        <item name="android:layout_width">@dimen/stat_icon_size</item>
+        <item name="android:layout_height">@dimen/stat_icon_size</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/ic_up_arrow</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <style name="Stat_Icon.Down">
+        <item name="android:rotation">180</item>
+    </style>
+
+    <style name="Stat_Text_Container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/spacing_md</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Stat_Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_green_lighter</item>
+        <item name="android:textSize">@dimen/text_xs</item>
+    </style>
+
+    <style name="Stat_Label.Income">
+        <item name="android:text">@string/income_stat_label</item>
+    </style>
+
+    <style name="Stat_Label.Expense">
+        <item name="android:text">@string/expense_stat_label</item>
+    </style>
+
+    <style name="Stat_Value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Stat_Value.Income">
+        <item name="android:text">@string/placeholder_income</item>
+    </style>
+
+    <style name="Stat_Value.Expense">
+        <item name="android:text">@string/placeholder_expense</item>
+    </style>
+
+    <style name="Section_Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+        <item name="android:text">@string/transactions_history_title</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Transactions_List">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_10</item>
+    </style>
+    <style name="Empty_State_Title">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+    <item name="android:textColor">@color/text_primary</item>
+    <item name="android:textSize">@dimen/text_lg</item>
+    <item name="android:textStyle">bold</item>
+</style>
+
+<style name="Empty_State_Subtitle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginTop">@dimen/spacing_sm</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">@color/text_secondary</item>
+    <item name="android:textSize">@dimen/text_sm</item>
+    <item name="android:lineSpacingExtra">4dp</item>
+</style>
+
+    <style name="empty_state_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="Empty_State_Icon">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:alpha">0.3</item>
+        <item name="android:src">@drawable/ic_category_other</item>
+        <item name="android:tint">@color/text_secondary</item>
+    </style>
+
+
+    <!-- CREATE TRANSACTION PAGE STYLES -->
+    <style name="Page_Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/background_light</item>
+        <item name="android:padding">@dimen/spacing_lg</item>
+    </style>
+
+    <style name="Back_Button">
+        <item name="android:layout_width">@dimen/icon_button_size</item>
+        <item name="android:layout_height">@dimen/icon_button_size</item>
+        <item name="android:background">@drawable/back_btn_bg</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+        <item name="android:src">@drawable/ic_left_arrow</item>
+        <item name="android:tint">@color/back_button_icon</item>
+    </style>
+
+    <style name="Page_Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_xl</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/spacing_md</item>
+    </style>
+
+    <style name="Page_Title.AddTransaction">
+        <item name="android:text">@string/add_transaction_title</item>
+    </style>
+
+    <style name="Toggle_Container_Full">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_xl</item>
+        <item name="android:background">@drawable/bg_toggle_container</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">@dimen/spacing_xs</item>
+        <item name="android:weightSum">2</item>
+    </style>
+
+    <style name="Toggle_Button_Expense">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/toggle_button_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/bg_toggle_selected_expense</item>
+        <item name="android:text">@string/toggle_expense</item>
+        <item name="android:textColor">@color/error_red</item>
+    </style>
+
+    <style name="Toggle_Button_Income">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/toggle_button_height</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:text">@string/toggle_income</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="Form_ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="Form_Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/spacing_lg</item>
+    </style>
+
+    <style name="Field_Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_sm</item>
+    </style>
+
+    <style name="Field_Label.Amount">
+        <item name="android:text">@string/label_amount</item>
+    </style>
+
+    <style name="Field_Label.Category">
+        <item name="android:text">@string/label_category</item>
+    </style>
+
+    <style name="Field_Label.Date">
+        <item name="android:text">@string/label_date</item>
+    </style>
+
+    <style name="Field_Label.Note">
+        <item name="android:text">@string/label_note</item>
+    </style>
+
+    <style name="Save_Button.Transaction">
+        <item name="android:layout_marginTop">@dimen/spacing_xl</item>
+        <item name="android:text">@string/save_transaction_button</item>
+    </style>
+
+    <!-- EDIT TRANSACTION PAGE STYLES -->
+    <style name="Page_Title.UpdateTransaction">
+        <item name="android:text">@string/update_transaction_title</item>
+    </style>
+
+    <!-- CATEGORIES PAGE STYLES -->
+    <style name="Page_Title.Categories">
+        <item name="android:text">@string/categories_page_title</item>
+    </style>
+
+    <style name="Add_Button">
+        <item name="android:layout_width">@dimen/icon_button_size</item>
+        <item name="android:layout_height">@dimen/icon_button_size</item>
+        <item name="android:background">@drawable/back_btn_bg</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+        <item name="android:src">@drawable/ic_add</item>
+    </style>
+
+    <style name="Categories_Grid">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginTop">@dimen/spacing_30</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_10</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <!-- CATEGORY ITEM STYLES -->
+    <style name="Category_Item_Container">
+        <item name="android:layout_width">@dimen/category_item_size</item>
+        <item name="android:layout_height">@dimen/category_item_size</item>
+        <item name="android:layout_margin">@dimen/item_margin</item>
+        <item name="android:background">@drawable/transaction_item_bg</item>
+        <item name="android:padding">@dimen/item_margin</item>
+    </style>
+
+    <style name="Category_Menu_Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_menu</item>
+        <item name="android:tint">@color/menu</item>
+        <item name="android:paddingEnd">@dimen/padding_small</item>
+        <item name="android:paddingLeft">@dimen/spacing_sm</item>
+        <item name="android:paddingBottom">@dimen/spacing_sm</item>
+    </style>
+
+    <style name="Category_Icon_Container">
+        <item name="android:layout_width">@dimen/category_icon_container</item>
+        <item name="android:layout_height">@dimen/category_icon_container</item>
+        <item name="cardBackgroundColor">@color/surface_white</item>
+        <item name="cardCornerRadius">@dimen/radius_md</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="Category_Icon">
+        <item name="android:layout_width">@dimen/category_icon_size</item>
+        <item name="android:layout_height">@dimen/category_icon_size</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/ic_category_food</item>
+        <item name="android:tint">@color/primary_green</item>
+    </style>
+
+    <style name="Category_Name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/item_margin</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:text">@string/placeholder_category_name</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- TRANSACTION ITEM STYLES -->
+    <style name="Transaction_Item_Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_md</item>
+        <item name="android:background">@drawable/transaction_item_bg</item>
+        <item name="android:padding">@dimen/spacing_md</item>
+    </style>
+
+    <style name="Transaction_Icon_Container">
+        <item name="android:layout_width">@dimen/icon_container_size</item>
+        <item name="android:layout_height">@dimen/icon_container_size</item>
+        <item name="cardCornerRadius">@dimen/radius_md</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="Transaction_Icon">
+        <item name="android:layout_width">@dimen/icon_size</item>
+        <item name="android:layout_height">@dimen/icon_size</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/ic_category_food</item>
+        <item name="android:tint">@color/primary_green</item>
+    </style>
+
+    <style name="Transaction_Name">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/spacing_md</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:text">@string/placeholder_transaction_name</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+    </style>
+
+    <style name="Transaction_Date">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/placeholder_transaction_date</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_xs</item>
+    </style>
+
+    <style name="Transaction_Note">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_xs</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/text_hint</item>
+        <item name="android:textSize">@dimen/text_xs</item>
+    </style>
+
+    <style name="Transaction_Amount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_lg</item>
+        <item name="android:text">@string/placeholder_transaction_amount</item>
+        <item name="android:textColor">@color/primary_green</item>
+        <item name="android:textSize">@dimen/text_md</item>
+    </style>
+
+    <style name="Transaction_Menu_Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_menu</item>
+        <item name="android:tint">@color/menu</item>
+        <item name="android:padding">@dimen/item_margin</item>
+    </style>
+<!-- back button -->
+<style name="BackButton">
+    <item name="android:background">@drawable/back_btn_bg</item>
+    <item name="android:padding">@dimen/spacing_md</item>
+    <item name="android:src">@drawable/ic_left_arrow</item>
+</style>
+
+<!-- add button-->
+<style name="AddButton">
+    <item name="android:background">@drawable/back_btn_bg</item>
+    <item name="android:padding">@dimen/spacing_md</item>
+    <item name="android:src">@drawable/ic_add</item>
+</style>
+
+
+<!-- menu button -->
+<style name="MenuButton">
+    <!-- Keep your icon -->
+    <item name="android:src">@drawable/ic_menu</item>
+
+</style>
+
+
+<!-- HEADERS -->
+<style name="Text_Header">
+    <item name="android:textSize">@dimen/text_xl</item>
+    <item name="android:textColor">@color/text_primary</item>
+    <item name="android:textStyle">bold</item>
+</style>
+
+<style name="Text_Subtitle">
+    <item name="android:textSize">@dimen/text_sm</item>
+    <item name="android:textColor">@color/text_secondary</item>
+</style>
+
+<style name="Text_Error">
+    <item name="android:textSize">@dimen/text_sm</item>
+    <item name="android:textColor">@color/error_red</item>
+</style>
+
+<style name="Text_Label">
+    <item name="android:textSize">@dimen/text_sm</item>
+    <item name="android:textColor">@color/text_secondary</item>
+    <item name="android:fontFamily">sans-serif-medium</item>
+    <item name="android:layout_marginTop">@dimen/spacing_20</item>
+    <item name="android:layout_marginBottom">@dimen/spacing_sm</item>
+</style>
+
+<!-- INPUT FIELDS -->
+<style name="Input_Field">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/input_height</item>
+    <item name="android:background">@drawable/input_field_background</item>
+    <item name="android:paddingStart">@dimen/spacing_md</item>
+    <item name="android:paddingEnd">@dimen/spacing_md</item>
+    <item name="android:drawablePadding">@dimen/spacing_md</item>
+    <item name="android:textColor">@color/text_input</item>
+    <item name="android:textSize">@dimen/text_sm</item>
+    <item name="android:layout_marginTop">@dimen/spacing_sm</item>
+    <item name="android:textColorHint">@color/text_secondary</item>
+     <!-- ADD THESE LINES -->
+    <item name="android:textDirection">ltr</item>
+    <item name="android:layoutDirection">ltr</item>
+</style>
+
+<style name="Input_Field.Category_Spinner">
+    <item name="android:paddingStart">0dp</item>
+    <item name="android:background">@drawable/input_field_background</item>
+    <item name="android:textColor">@color/text_primary</item>
+    <item name="android:textColorHint">@color/text_hint</item>
+    <item name="android:popupBackground">@drawable/spinner_dropdown_bg</item>
+</style>
+
+
+
+
+    <!-- TOGGLE BUTTONS -->
+<style name="Toggle_Container">
+    <item name="android:background">@drawable/bg_toggle_container</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:padding">@dimen/spacing_xs</item>
+    <item name="android:weightSum">2</item>
+</style>
+
+<style name="Toggle_Button">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">@dimen/toggle_button_height</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textSize">@dimen/text_sm</item>
+    <item name="android:textStyle">bold</item>
+</style>
+
+<!-- PRIMARY BUTTON -->
+<style name="Save_Button">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/button_height</item>
+    <item name="android:background">@drawable/button_background</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">@dimen/text_md</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+</style>
+
+    <!-- BOTTOM NAVIGATION STYLES -->
+    <style name="Nav_Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/nav_height</item>
+        <item name="android:background">@drawable/bottom_nav_bg</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">@dimen/spacing_lg</item>
+    </style>
+
+    <style name="Nav_Item">
+        <item name="android:layout_width">@dimen/nav_item_size</item>
+        <item name="android:layout_height">@dimen/nav_item_size</item>
+        <item name="android:padding">@dimen/spacing_10</item>
+    </style>
+
+
+
+    <style name="Nav_Item.Default">
+        <item name="android:tint">@color/nav_icon_default</item>
+    </style>
+
+    <style name="Nav_Add_Button">
+        <item name="android:layout_width">@dimen/nav_add_btn_size</item>
+        <item name="android:layout_height">@dimen/nav_add_btn_size</item>
+        <item name="android:background">@drawable/logo_background</item>
+        <item name="android:elevation">@dimen/elevation_sm</item>
+    </style>
+
+    <style name="Nav_Add_Icon">
+        <item name="android:layout_width">@dimen/nav_add_icon_size</item>
+        <item name="android:layout_height">@dimen/nav_add_icon_size</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:tint">@color/icon_on_primary</item>
+    </style>
+
+
+    <!-- PROFILE PAGE STYLES -->
+    <style name="Profile_Avatar_Card">
+        <item name="android:layout_width">@dimen/profile_avatar_size</item>
+        <item name="android:layout_height">@dimen/profile_avatar_size</item>
+        <item name="cardCornerRadius">@dimen/radius_round</item>
+        <item name="cardElevation">@dimen/elevation_sm</item>
+    </style>
+
+    <style name="Profile_Section_Label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_xs</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Profile_Row_Arrow">
+        <item name="android:layout_width">@dimen/stat_icon_size</item>
+        <item name="android:layout_height">@dimen/stat_icon_size</item>
+        <item name="android:src">@drawable/ic_right_arrow_head</item>
+        <item name="android:tint">@color/text_hint</item>
+    </style>
+
+    <style name="Divider_Horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/border_light</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_xs</item>
+        <item name="android:layout_marginTop">@dimen/spacing_xs</item>
+    </style>
+        <!-- PROFILE STRUCTURAL STYLES -->
+    <style name="Profile_Scroll_View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    
+    <style name="Profile_Avatar_Image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:padding">@dimen/spacing_10</item>
+        <item name="android:tint">@color/primary_green</item>
+    </style>
+
+    <style name="Profile_Content_Wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/spacing_xl</item>
+    </style>
+
+    <style name="Profile_Header_Wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">@dimen/spacing_md</item>
+    </style>
+
+    <style name="Profile_Name_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/spacing_md</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Profile_Email_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+    </style>
+
+    <style name="Profile_Card_Container" parent="Transaction_Item_Container">
+        <item name="android:padding">@dimen/spacing_xs</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Profile_Row_Wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Profile_Row_Label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/spacing_md</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Profile_Language_Value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/spacing_sm</item>
+        <item name="android:textColor">@color/primary_green</item>
+        <item name="android:textStyle">bold</item>
+    </style>    <style name="Profile_Switch">
+        <item name="android:layout_width">@dimen/switch_size</item>
+        <item name="android:layout_height">@dimen/switch_size</item>
+    </style>
+
+    <!-- DIALOG STYLES -->
+    <style name="Dialog_Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/spacing_lg</item>
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
+    </style>
+
+    <style name="Dialog_RadioGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Dialog_RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/radio_button_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/spacing_md</item>
+        <item name="android:paddingEnd">@dimen/spacing_md</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="Dialog_RadioButton.First">
+        <item name="android:layout_marginTop">@dimen/spacing_lg</item>
+    </style>
+
+    <style name="Dialog_RadioButton.Middle">
+        <item name="android:layout_marginTop">@dimen/spacing_sm</item>
+    </style>
+
+     <!-- BOTTOM SHEET STYLES -->
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet</item>
+    </style>
+
+    <!-- Add to styles.xml -->
+<style name="Toggle_Button_Income_Small" parent="Toggle_Button_Income">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:textSize">@dimen/text_xs</item>
+</style>
+
+<style name="Toggle_Button_Expense_Small" parent="Toggle_Button_Expense">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:textSize">@dimen/text_xs</item>
+</style>    <style name="Toggle_Button_Both">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/toggle_button_height</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/text_sm</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Toggle_Container_Half">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/bg_toggle_container</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/spacing_xs</item>
+    </style>
+
+</resources>

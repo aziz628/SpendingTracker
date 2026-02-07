@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--gradient start with dark green and ends with darker green   -->
+    <gradient
+        android:startColor="@color/green_700"
+        android:centerColor="@color/green_800"
+        android:endColor="@color/green_900"
+        android:angle="135" />  
+    <corners android:radius="24dp" />
+</shape>

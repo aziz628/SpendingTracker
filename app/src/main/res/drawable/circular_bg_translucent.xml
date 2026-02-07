@@ -1,0 +1,7 @@
+<!-- a white circle with 0.2 opacity drawable -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 20% opacity = 33 in hex (approx 51/255) -->
+    <solid android:color="@color/surface_translucent" />
+    <size android:width="40dp" android:height="40dp" />
+    <corners android:radius="20dp" />
+</shape>

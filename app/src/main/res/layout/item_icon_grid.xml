@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/spacing_md"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true">
+
+    <!-- Icon Container -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/icon_container"
+        android:layout_width="@dimen/category_icon_container"
+        android:layout_height="@dimen/category_icon_container"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/radius_md"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/surface_white"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/category_icon"
+            android:layout_width="@dimen/category_icon_size"
+            android:layout_height="@dimen/category_icon_size"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_category_food"
+            android:tint="@color/primary_green" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<resources>
+    <string name="app_name">BudgetManger</string>
+
+    <!--english main lang-->
+
+    <!-- Main/Home Screen errors -->
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!-- Sign Up Screen -->
+    <string name="signup_title">Create Account</string>
+    <string name="signup_subtitle">Start your financial journey today</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="already_have_account">Already have an account? </string>
+    <string name="sign_in_link">Sign In</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to manage your finances</string>
+    <string name="forgot_password_link">Forgot Password?</string>
+    <string name="login_button">Log In</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="signup_link">Sign Up</string>
+
+    <!-- Main/Home Screen -->
+    <string name="sub_title">Welcome Back</string>
+    <string name="total_balance_title">TOTAL BALANCE ^</string>
+    <string name="income_stat_label">Income</string>
+    <string name="expense_stat_label">Expenses</string>
+    <string name="transactions_history_title">Transactions History</string>
+    <string name="placeholder_balance">$2,548.00</string>
+    <string name="placeholder_income">$2,648.00</string>
+    <string name="placeholder_expense">$100.00</string>
+
+    <!-- Empty transactions State -->
+    <string name="empty_state_no_transactions">No Transactions Yet</string>
+    <string name="empty_state_add_transaction">Tap the + button to start tracking\nyour budget and expenses.</string>
+    <string name="see_all_transactions">See All</string>
+
+    <!-- Create Transaction Screen -->
+    <string name="add_transaction_title">Add Transaction</string>
+    <string name="toggle_expense">Expense</string>
+    <string name="toggle_income">Income</string>
+    <string name="label_amount">Amount</string>
+    <string name="hint_amount">0.00</string>
+    <string name="label_category">Category</string>
+    <string name="label_date">Date</string>
+    <string name="label_note">Note (Optional)</string>
+    <string name="hint_note">Add a note...</string>
+    <string name="save_transaction_button">Save Transaction</string>
+    <string name="placeholder_date">23/11/2025</string>
+
+    <!-- Update Transaction Screen -->
+    <string name="update_transaction_title">Update Transaction</string>
+
+    <!-- Categories Screen -->
+    <string name="categories_page_title">Categories</string>
+
+    <!-- Item Placeholders -->
+    <string name="placeholder_category_name">Name</string>
+    <string name="placeholder_transaction_name">Upwork</string>
+    <string name="placeholder_transaction_date">Apr 15, 2025</string>
+    <string name="placeholder_transaction_amount">+ $ 950.00</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_name_placeholder">Alex Johnson</string>
+    <string name="profile_email_placeholder">alex.johnson@example.com</string>
+    <string name="profile_section_account">ACCOUNT SETTINGS</string>
+    <string name="profile_edit_info">Edit Personal Info</string>
+    <string name="profile_change_password">Change Password</string>
+    <string name="profile_section_preferences">APP PREFERENCES</string>
+    <string name="profile_theme">Theme</string>
+    <string name="profile_language">Language</string>
+    <string name="profile_language_value">English</string>
+
+    <!-- Profile Update Strings -->
+    <string name="edit_profile_title">Edit Personal Info</string>
+    <string name="change_password_title">Change Password</string>
+    <string name="hint_new_name">New Name</string>
+    <string name="hint_new_email">New Email</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="btn_save_info">Save Info</string>
+    <string name="btn_update_password">Update Password</string>
+
+
+    <!-- Result Messages -->
+    <string name="msg_update_success">Profile updated successfully</string>
+    <string name="msg_password_success">Password changed successfully</string>
+    <string name="error_update_failed">Failed to update profile</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_insufficient_balance">Insufficient balance for this action</string>
+
+    <!-- Saripaar Error Tokens -->
+    <string name="validation_name_required">Name is required</string>
+    <string name="validation_email_invalid">Invalid email format</string>
+    <string name="validation_password_short">Password must be at least 6 characters</string>
+
+    <!-- Language Selection -->
+    <string name="language_selection_title">Select Language</string>
+    <string name="btn_apply_language">Apply</string>
+    <!--options-->
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_arabic">العربية</string>
+
+
+    <!-- SERVICE LAYER MESSAGES -->
+
+    <!-- Auth Service -->
+    <string name="error_invalid_credentials">Invalid credentials</string>
+    <string name="error_user_exists">User already exists with this email</string>
+    <string name="error_registration_failed">Registration failed</string>
+
+    <!-- Category Service -->
+    <string name="error_create_category_failed">Failed to create category</string>
+    <string name="error_category_not_found">Category not found</string>
+    <string name="error_delete_category_balance">Cannot delete the category, balance would become negative</string>
+    <string name="msg_category_deleted">Category deleted successfully</string>
+    <string name="error_delete_category_failed">Failed to delete category</string>
+
+    <!-- Transaction Service -->
+    <string name="error_insufficient_balance_amount">Insufficient balance. Current balance: $%.2f</string>
+    <string name="error_create_transaction_failed">Failed to create transaction</string>
+    <string name="error_transaction_not_found">Transaction not found</string>
+    <string name="error_update_transaction_failed">Failed to update transaction</string>
+    <string name="msg_transaction_deleted">Transaction deleted successfully</string>
+    <string name="error_delete_transaction_failed">Failed to delete transaction</string>
+
+    <!-- User Service -->
+    <string name="error_email_exists">Email already exists</string>
+    <string name="msg_user_updated">User updated successfully</string>
+    <string name="msg_password_updated">Password updated successfully</string>
+
+
+    <!-- CURRENCY FORMAT -->
+    <string name="currency_format">$%.2f</string>
+
+
+    <!-- ACTIVITY LOGIC MESSAGES -->
+
+    <!-- Transaction Messages -->
+    <string name="msg_transaction_saved">Transaction saved successfully!</string>
+    <string name="msg_no_transactions">No transactions yet. Start by adding one!</string>
+    <string name="msg_transaction_deleted_success">Transaction deleted successfully</string>
+    <string name="error_delete_transaction_prefix">Failed to delete transaction: %s</string>
+    <string name="error_prefix">Error: %s</string>
+    <string name="error_no_categories_available">No categories available for %s</string>
+
+    <!-- Navigation Messages -->
+    <string name="msg_already_here">Already here</string>
+    <string name="msg_edit_prefix">Edit: %s</string>
+
+    <!-- Forgot Password -->
+    <string name="msg_forgot_password_placeholder">Reset password feature coming soon</string>
+
+    <!-- Saripaar Custom Messages -->
+    <string name="saripaar_amount_required">Amount is required</string>
+    <string name="saripaar_amount_min">Amount must be greater than 0</string>
+    <string name="saripaar_name_required">Name cannot be empty</string>
+    <string name="saripaar_name_length">Name must be 2-50 characters</string>
+    <string name="saripaar_email_empty">Email cannot be empty</string>
+    <string name="saripaar_email_invalid">Please enter a valid email</string>
+    <string name="saripaar_password_empty">Password cannot be empty</string>
+    <string name="saripaar_password_min">Password must be at least 6 characters</string>
+    <string name="saripaar_confirm_password_empty">Please confirm your password</string>
+    <string name="saripaar_new_password_required">New password is required</string>
+    <string name="saripaar_passwords_not_match">Passwords do not match</string>
+    <string name="saripaar_category_required">Category is required</string>
+    <string name="saripaar_description_required">Description is required</string>
+    <string name="saripaar_date_required">Date is required</string>
+
+    <!-- Category/Transaction Types -->
+    <string name="type_income">income</string>
+    <string name="type_expense">expense</string>
+
+    <!-- Popup Menu Actions -->
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Theme Selection -->
+    <string name="theme_selection_title">Select Theme</string>
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light Mode</string>
+    <string name="theme_dark">Dark Mode</string>
+    <string name="btn_apply_theme">Apply</string>
+    <string name="category_icon">Category Icon</string>
+
+    <!-- default categories -->
+    <string name="default_category_food">Food</string>
+    <string name="default_category_transport">Transport</string>
+    <string name="default_category_shopping">Shopping</string>
+    <string name="default_category_salary">Salary</string>
+    <string name="default_category_freelance">Freelance</string>
+    <string name="default_category_other">Other</string>
+
+    <!-- Category Management -->
+    <string name="add_category_title">Create Category</string>
+    <string name="update_category_title">Update Category</string>
+    <string name="label_icon">Select Icon</string>
+    <string name="label_category_name">Category Name</string>
+    <string name="btn_create_category">Create Category</string>
+    <string name="btn_update_category">Update Category</string>
+    <string name="msg_category_created">Category created successfully</string>
+    <string name="msg_category_updated">Category updated successfully</string>
+    <string name="msg_all_categories_created">All available categories created</string>
+    <string name="hint_category_name">Enter category name</string>
+    <string name="saripaar_category_name_required">Category name is required</string>
+
+    <!-- Add to strings.xml -->
+<string name="transactions_over_time_title">Transactions Over Time</string>
+<string name="category_distribution_title">Category Distribution</string>
+<string name="toggle_both">Both</string>
+<string name="line_chart_placeholder">Line Chart will appear here</string>
+<string name="pie_chart_placeholder">Pie Chart will appear here</string>
+<string name="no_data_available">No data available</string>
+
+    <!-- Stats Activity Strings -->
+    <string name="chart_title_income">Income by Category</string>
+    <string name="chart_title_expense">Expenses by Category</string>
+    <string name="graph_title_income">Monthly Income Trends</string>
+    <string name="graph_title_expense">Monthly Expense Trends</string>
+    <string name="graph_title_both">Monthly Income vs Expenses</string>
+    <string name="no_chart_data">No data available for chart</string>
+    <string name="no_graph_data">No data available for graph</string>
+    <string name="legend_title">Legend</string>
+    <string name="stats_title">Statistics</string>
+
+</resources>

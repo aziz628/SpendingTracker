@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/Page_Container"
+    tools:context=".activities.CreateCategoryActivity">
+
+    <!-- Top Navigation -->
+    <ImageView
+        android:id="@+id/back_button"
+        style="@style/Back_Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_title"
+        style="@style/Page_Title"
+        android:text="@string/add_category_title"
+        app:layout_constraintBottom_toBottomOf="@id/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_button" />
+
+    <!-- Type Toggle (Income/Expense) -->
+    <LinearLayout
+        android:id="@+id/toggle_container"
+        style="@style/Toggle_Container_Full"
+        app:layout_constraintTop_toBottomOf="@id/back_button"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/btn_expense"
+            style="@style/Toggle_Button_Expense" />
+
+        <TextView
+            android:id="@+id/btn_income"
+            style="@style/Toggle_Button_Income" />
+    </LinearLayout>
+
+    <!-- Form Content -->
+    <ScrollView
+        style="@style/Form_ScrollView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggle_container"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout style="@style/Form_Content">
+
+            <!-- Service Error Banner -->
+            <TextView
+                android:id="@+id/form_service_error"
+                style="@style/Error_Banner" />
+
+            <!-- Available Categories Dropdown -->
+            <TextView style="@style/Field_Label.Category" />
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                style="@style/Input_Field.Category_Spinner"
+                android:spinnerMode="dropdown" />
+            
+            <TextView
+                android:id="@+id/category_error"
+                style="@style/Error_Text" />
+
+            <!-- Category Name Input (Auto-filled but editable) -->
+            <TextView style="@style/Field_Label"
+                android:text="@string/label_category_name" />
+
+            <EditText
+                android:id="@+id/name_input"
+                style="@style/Input_Field"
+                android:drawableStart="@drawable/ic_pen"
+                android:hint="@string/hint_category_name"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:id="@+id/name_error"
+                style="@style/Error_Text" />
+
+            <!-- Submit Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/create_button"
+                style="@style/Save_Button"
+                android:text="@string/btn_create_category" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

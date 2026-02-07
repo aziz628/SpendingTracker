@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog_Container">
+
+    <!-- Title -->
+    <TextView
+        style="@style/Empty_State_Title"
+        android:text="@string/theme_selection_title" />
+
+    <!-- Radio Group to manage single selection -->
+    <RadioGroup
+        style="@style/Dialog_RadioGroup"
+        android:id="@+id/theme_radio_group">
+
+        <!-- System Default Radio Button -->
+        <RadioButton
+            android:id="@+id/radio_system"
+            style="@style/Dialog_RadioButton.First"
+            android:text="@string/theme_system" />
+
+        <!-- Light Mode Radio Button -->
+        <RadioButton
+            android:id="@+id/radio_light"
+            style="@style/Dialog_RadioButton.Middle"
+            android:text="@string/theme_light" />
+
+        <!-- Dark Mode Radio Button -->
+        <RadioButton
+            android:id="@+id/radio_dark"
+            style="@style/Dialog_RadioButton.Middle"
+            android:text="@string/theme_dark" />
+
+    </RadioGroup>
+
+    <!-- Apply Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_apply_theme"
+        style="@style/Save_Button"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:text="@string/btn_apply_theme" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_bottom_sheet"
+    >
+    <!-- bottom sheet title -->
+    <TextView
+        style="@style/Empty_State_Title"
+        android:text="@string/edit_profile_title" />
+    
+    <!-- form error banner -->
+    <TextView
+        android:id="@+id/sheet_error_text"
+        style="@style/Error_Banner"
+        tools:text="Email already exists !"
+        android:layout_marginTop="@dimen/spacing_md"
+        tools:visibility="visible" />
+
+    <!-- name input field -->
+    <EditText
+        android:id="@+id/edit_name"
+        style="@style/Input_Field"
+        android:hint="@string/hint_new_name" />
+    
+    <!-- name error message -->
+    <TextView
+        android:id="@+id/name_error"
+        style="@style/Error_Text"
+        tools:visibility="visible"
+        tools:text="error"
+        />
+    <!-- email input field -->
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Input_Field"
+        android:hint="@string/hint_new_email"
+        android:inputType="textEmailAddress" />
+    
+    <!-- email error message -->
+    <TextView
+        android:id="@+id/email_error"
+        style="@style/Error_Text" />
+
+    <!-- save button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save_info"
+        style="@style/Save_Button"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:text="@string/btn_save_info"  />
+
+</LinearLayout>

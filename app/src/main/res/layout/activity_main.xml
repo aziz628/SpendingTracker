@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/Main_Container"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/sub_title"
+        style="@style/Header_Subtitle"
+        android:text="@string/sub_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_title"
+        style="@style/Header_Title"
+        android:text="@string/sub_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sub_title" />
+
+    <ImageView
+        android:id="@+id/logout_button"
+        style="@style/Logout_Button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/balance_card"
+        style="@style/Balance_Card"
+        app:layout_constraintTop_toBottomOf="@id/main_title"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/total_balance_label"
+            style="@style/Balance_Label"
+            android:text="@string/total_balance_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/total_balance_value"
+            style="@style/Balance_Value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total_balance_label" />
+
+        <LinearLayout
+            style="@style/Income_Expense_Row"
+            app:layout_constraintTop_toBottomOf="@id/total_balance_value">
+
+            <LinearLayout style="@style/Stat_Container">
+                <FrameLayout style="@style/Stat_Icon_Wrapper">
+                    <ImageView style="@style/Stat_Icon" />
+                </FrameLayout>
+
+                <LinearLayout style="@style/Stat_Text_Container">
+                    <TextView 
+                        style="@style/Stat_Label.Income"
+                        android:text="@string/income_stat_label" />
+                    <TextView
+                        android:id="@+id/income_value"
+                        style="@style/Stat_Value.Income" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/Stat_Container">
+                <FrameLayout style="@style/Stat_Icon_Wrapper">
+                    <ImageView style="@style/Stat_Icon.Down" />
+                </FrameLayout>
+
+                <LinearLayout style="@style/Stat_Text_Container">
+                    <TextView 
+                        style="@style/Stat_Label.Expense"
+                        android:text="@string/expense_stat_label" />
+                    <TextView
+                        android:id="@+id/expense_value"
+                        style="@style/Stat_Value.Expense" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/transactions_title"
+        style="@style/Section_Title"
+        android:text="@string/transactions_history_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/balance_card" />
+
+    <!--
+    <TextView
+        android:id="@+id/see_all_transactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_all_transactions"
+        android:textSize="@dimen/text_md"
+        android:textColor="@color/primary_green"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/transactions_title"
+        app:layout_constraintEnd_toEndOf="parent" />
+        -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactions_recycler"
+        style="@style/Transactions_List"
+        app:layout_constraintBottom_toTopOf="@id/navigation_include"
+        app:layout_constraintTop_toBottomOf="@id/transactions_title"
+        tools:listitem="@layout/transaction_item"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/empty_state_container"
+        style="@style/empty_state_container"
+        app:layout_constraintBottom_toTopOf="@id/navigation_include"
+        app:layout_constraintTop_toBottomOf="@id/transactions_title"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible">
+
+        <ImageView
+            style="@style/Empty_State_Icon"/>
+
+        <TextView
+            style="@style/Empty_State_Title"
+            android:text="@string/empty_state_no_transactions" />
+
+        <TextView
+            style="@style/Empty_State_Subtitle"
+            android:text="@string/empty_state_add_transaction" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/navigation_include"
+        layout="@layout/layout_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

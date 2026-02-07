@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مدير الميزانية</string>
+
+    <!-- Main/Home Screen errors -->
+    <string name="invalid_username">اسم مستخدم غير صحيح</string>
+    <string name="invalid_password">يجب أن تكون كلمة المرور أكثر من 5 أحرف</string>
+    <string name="login_failed">فشل تسجيل الدخول</string>
+
+    <!-- Sign Up Screen -->
+    <string name="signup_title">إنشاء حساب</string>
+    <string name="signup_subtitle">ابدأ رحلتك المالية اليوم</string>
+    <string name="hint_full_name">الاسم الكامل</string>
+    <string name="hint_email">عنوان البريد الإلكتروني</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="signup_button">إنشاء حساب</string>
+    <string name="already_have_account">هل لديك حساب بالفعل؟ </string>
+    <string name="sign_in_link">تسجيل الدخول</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">أهلا وسهلا</string>
+    <string name="login_subtitle">قم بتسجيل الدخول لإدارة أموالك</string>
+    <string name="forgot_password_link">هل نسيت كلمة المرور؟</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="no_account">ليس لديك حساب؟ </string>
+    <string name="signup_link">إنشاء حساب</string>
+
+    <!-- Main/Home Screen -->
+    <string name="sub_title">أهلا وسهلا</string>
+    <string name="total_balance_title">الرصيد الإجمالي ^</string>
+    <string name="income_stat_label">الدخل</string>
+    <string name="expense_stat_label">المصروفات</string>
+    <string name="transactions_history_title">سجل المعاملات</string>
+    <string name="placeholder_balance">$2,548.00</string>
+    <string name="placeholder_income">$2,648.00</string>
+    <string name="placeholder_expense">$100.00</string>
+
+    <!-- Empty transactions State -->
+    <string name="empty_state_no_transactions">لا توجد معاملات حتى الآن</string>
+    <string name="empty_state_add_transaction">اضغط على زر + لبدء تتبع\nدخلك ونفقاتك.</string>
+    <string name="see_all_transactions">عرض الكل</string>
+
+    <!-- Create Transaction Screen -->
+    <string name="add_transaction_title">إضافة معاملة</string>
+    <string name="toggle_expense">مصروف</string>
+    <string name="toggle_income">دخل</string>
+    <string name="label_amount">المبلغ</string>
+    <string name="hint_amount">0.00</string>
+    <string name="label_category">الفئة</string>
+    <string name="label_date">التاريخ</string>
+    <string name="label_note">ملاحظة (اختياري)</string>
+    <string name="hint_note">أضف ملاحظة...</string>
+    <string name="save_transaction_button">حفظ المعاملة</string>
+    <string name="placeholder_date">23/11/2025</string>
+
+    <!-- Update Transaction Screen -->
+    <string name="update_transaction_title">تحديث المعاملة</string>
+
+    <!-- Categories Screen -->
+    <string name="categories_page_title">الفئات</string>
+
+    <!-- Item Placeholders -->
+    <string name="placeholder_category_name">الاسم</string>
+    <string name="placeholder_transaction_name">Upwork</string>
+    <string name="placeholder_transaction_date">15 أبريل 2025</string>
+    <string name="placeholder_transaction_amount">+ $950.00</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">الملف الشخصي</string>
+    <string name="profile_name_placeholder">Alex Johnson</string>
+    <string name="profile_email_placeholder">alex.johnson@example.com</string>
+    <string name="profile_section_account">إعدادات الحساب</string>
+    <string name="profile_edit_info">تعديل المعلومات الشخصية</string>
+    <string name="profile_change_password">تغيير كلمة المرور</string>
+    <string name="profile_section_preferences">تفضيلات التطبيق</string>
+    <string name="profile_theme">المظهر</string>
+    <string name="profile_language">اللغة</string>
+    <string name="profile_language_value">العربية</string>
+
+    <!-- Profile Update Strings -->
+    <string name="edit_profile_title">تعديل المعلومات الشخصية</string>
+    <string name="change_password_title">تغيير كلمة المرور</string>
+    <string name="hint_new_name">الاسم الجديد</string>
+    <string name="hint_new_email">البريد الإلكتروني الجديد</string>
+    <string name="hint_new_password">كلمة المرور الجديدة</string>
+    <string name="hint_confirm_password">تأكيد كلمة المرور</string>
+    <string name="btn_save_info">حفظ المعلومات</string>
+    <string name="btn_update_password">تحديث كلمة المرور</string>
+
+    <!-- Result Messages -->
+    <string name="msg_update_success">تم تحديث الملف الشخصي بنجاح</string>
+    <string name="msg_password_success">تم تغيير كلمة المرور بنجاح</string>
+    <string name="error_update_failed">فشل تحديث الملف الشخصي</string>
+    <string name="error_password_mismatch">كلمات المرور غير متطابقة</string>
+    <string name="error_insufficient_balance">رصيد غير كافي لهذا الإجراء</string>    <!-- Saripaar Error Tokens -->
+    <string name="validation_name_required">الاسم مطلوب</string>
+    <string name="validation_email_invalid">صيغة البريد الإلكتروني غير صحيحة</string>
+    <string name="validation_password_short">يجب أن تكون كلمة المرور 6 أحرف على الأقل</string>
+    
+    <!-- Saripaar Custom Messages (for validation) -->
+    <string name="saripaar_amount_required">المبلغ مطلوب</string>
+    <string name="saripaar_amount_min">يجب أن يكون المبلغ أكبر من 0</string>
+    <string name="saripaar_name_required">الاسم لا يمكن أن يكون فارغًا</string>
+    <string name="saripaar_name_length">يجب أن يكون الاسم من 2 إلى 50 حرفًا</string>
+    <string name="saripaar_email_empty">البريد الإلكتروني لا يمكن أن يكون فارغًا</string>
+    <string name="saripaar_email_invalid">يرجى إدخال بريد إلكتروني صحيح</string>
+    <string name="saripaar_password_empty">كلمة المرور لا يمكن أن تكون فارغة</string>
+    <string name="saripaar_password_min">يجب أن تكون كلمة المرور 6 أحرف على الأقل</string>
+    <string name="saripaar_confirm_password_empty">يرجى تأكيد كلمة المرور الخاصة بك</string>
+    <string name="saripaar_new_password_required">كلمة مرور جديدة مطلوبة</string>
+    <string name="saripaar_passwords_not_match">كلمات المرور غير متطابقة</string>
+    <string name="saripaar_category_required">الفئة مطلوبة</string>
+    <string name="saripaar_description_required">الوصف مطلوب</string>
+    <string name="saripaar_date_required">التاريخ مطلوب</string>
+    
+    <!-- SERVICE LAYER MESSAGES -->
+    
+    <!-- Auth Service -->
+    <string name="error_invalid_credentials">بيانات اعتماد غير صحيحة</string>
+    <string name="error_user_exists">يوجد مستخدم بالفعل بهذا البريد الإلكتروني</string>
+    <string name="error_registration_failed">فشل التسجيل</string>
+    
+    <!-- Category Service -->
+    <string name="error_create_category_failed">فشل إنشاء الفئة</string>
+    <string name="error_category_not_found">الفئة غير موجودة</string>
+    <string name="error_delete_category_balance">لا يمكن حذف الفئة، سيصبح الرصيد سالبًا</string>
+    <string name="msg_category_deleted">تم حذف الفئة بنجاح</string>
+    <string name="error_delete_category_failed">فشل حذف الفئة</string>
+    
+    <!-- Transaction Service -->
+    <string name="error_insufficient_balance_amount">رصيد غير كافي. الرصيد الحالي: %.2f ر.س</string>
+    <string name="error_create_transaction_failed">فشل إنشاء المعاملة</string>
+    <string name="error_transaction_not_found">المعاملة غير موجودة</string>
+    <string name="error_update_transaction_failed">فشل تحديث المعاملة</string>
+    <string name="msg_transaction_deleted">تم حذف المعاملة بنجاح</string>
+    <string name="error_delete_transaction_failed">فشل حذف المعاملة</string>
+    
+    <!-- User Service -->
+    <string name="error_email_exists">البريد الإلكتروني موجود بالفعل</string>
+    <string name="msg_user_updated">تم تحديث المستخدم بنجاح</string>
+    <string name="msg_password_updated">تم تحديث كلمة المرور بنجاح</string>
+    
+    <!-- ACTIVITY UI MESSAGES -->
+    
+    <string name="msg_transaction_saved">تم حفظ المعاملة بنجاح!</string>
+    <string name="msg_no_transactions">لا توجد معاملات حتى الآن. ابدأ بإضافة واحدة!</string>
+    <string name="error_delete_transaction_prefix">فشل حذف المعاملة: %s</string>
+    <string name="error_prefix">خطأ: %s</string>
+    <string name="msg_already_here">أنت هنا بالفعل</string>
+    <string name="msg_edit_prefix">تعديل: %s</string>
+    <string name="msg_forgot_password_placeholder">ميزة إعادة تعيين كلمة المرور قريبًا</string>
+    <string name="msg_transaction_deleted_success">تم حذف المعاملة بنجاح</string>
+    <string name="error_no_categories_available">لا توجد فئات متاحة لـ %s</string>
+    
+    <!-- Category/Transaction Types -->
+    <string name="type_income">دخل</string>
+    <string name="type_expense">مصروف</string>
+      <!-- Popup Menu Actions -->
+    <string name="action_edit">تعديل</string>
+    <string name="action_delete">حذف</string>
+    
+    <!-- Theme Selection -->
+    <string name="theme_selection_title">اختر المظهر</string>
+    <string name="theme_system">إعدادات النظام</string>
+    <string name="theme_light">الوضع الفاتح</string>
+    <string name="theme_dark">الوضع الداكن</string>    <string name="btn_apply_theme">تطبيق</string>
+    <string name="category_icon">أيقونة الفئة</string>
+    
+    <!-- Currency Format -->
+    <string name="currency_format">$%.2f</string>
+    
+    <!-- Language Selection -->
+    <string name="language_selection_title">اختر اللغة</string>
+    <string name="btn_apply_language">تطبيق</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_arabic">العربية</string>
+    
+    <!-- default categories -->
+    <string name="default_category_food">طعام</string>
+    <string name="default_category_transport">مواصلات</string>
+    <string name="default_category_shopping">تسوق</string>
+    <string name="default_category_salary">راتب</string>
+    <string name="default_category_freelance">عمل حر</string>
+    <string name="default_category_other">أخرى</string>
+
+    <!-- Category Management -->
+    <string name="add_category_title">إنشاء فئة</string>
+    <string name="update_category_title">تحديث الفئة</string>
+    <string name="label_icon">اختيار أيقونة</string>
+    <string name="label_category_name">اسم الفئة</string>
+    <string name="btn_create_category">إنشاء فئة</string>
+    <string name="btn_update_category">تحديث الفئة</string>
+    <string name="msg_category_created">تم إنشاء الفئة بنجاح</string>
+    <string name="msg_category_updated">تم تحديث الفئة بنجاح</string>
+    <string name="msg_all_categories_created">تم إنشاء جميع الفئات المتاحة</string>
+    <string name="hint_category_name">أدخل اسم الفئة</string>
+    <string name="saripaar_category_name_required">اسم الفئة مطلوب</string>
+
+    <!-- Stats Activity Strings -->
+    <string name="transactions_over_time_title">المعاملات عبر الزمن</string>
+    <string name="category_distribution_title">التوزيع حسب الفئة</string>
+    <string name="pie_chart_placeholder">سيظهر الرسم البياني الدائري هنا</string>
+    <string name="line_chart_placeholder">سيظهر الرسم البياني الخطي هنا</string>
+    <string name="chart_title_income">الإيرادات حسب الفئة</string>
+    <string name="chart_title_expense">المصروفات حسب الفئة</string>
+    <string name="graph_title_income">اتجاهات الإيرادات الشهرية</string>
+    <string name="graph_title_expense">اتجاهات المصروفات الشهرية</string>
+    <string name="graph_title_both">الإيرادات مقابل المصروفات الشهرية</string>
+    <string name="no_chart_data">لا توجد بيانات متاحة للرسم البياني</string>
+    <string name="no_graph_data">لا توجد بيانات متاحة للرسم البياني</string>
+    <string name="legend_title">المفتاح</string>
+    <string name="stats_title">الإحصائيات</string>
+    <string name="toggle_both">كلاهما</string>
+    <string name="no_data_available">لا توجد بيانات متاحة للفترة المحددة</string>
+</resources>

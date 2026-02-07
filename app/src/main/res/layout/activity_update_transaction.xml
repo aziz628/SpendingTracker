@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/Page_Container"
+    tools:context=".activities.UpdateTransactionActivity">
+
+    <ImageView
+        android:id="@+id/back_button"
+        style="@style/Back_Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_title"
+        style="@style/Page_Title.UpdateTransaction"
+        app:layout_constraintBottom_toBottomOf="@id/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_button" />
+
+    <ScrollView
+        style="@style/Form_ScrollView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_title"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout style="@style/Form_Content">
+
+            <!-- tools text show error text for editor preview (don't render at runtime) -->
+            <TextView
+                android:id="@+id/update_transaction_form_error"
+                style="@style/Error_Banner"
+                tools:text="Balance insufficient"
+                tools:visibility="visible" />
+
+            <TextView style="@style/Field_Label.Amount" />
+
+            <EditText
+                android:id="@+id/amount_input"
+                style="@style/Input_Field"
+                android:drawableStart="@drawable/ic_amount"
+                android:hint="@string/hint_amount"
+                android:textColorHint="@color/text_secondary"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/amount_error"
+                style="@style/Error_Text" />
+
+
+            <TextView style="@style/Field_Label.Date" />
+
+            <EditText
+                android:id="@+id/date_input"
+                style="@style/Input_Field"
+                android:drawableStart="@drawable/ic_date"
+                android:focusable="false"
+                android:textColorHint="@color/text_secondary"
+                android:text="@string/placeholder_date" />
+
+            <TextView style="@style/Field_Label.Note" />
+
+            <EditText
+                android:id="@+id/note_input"
+                style="@style/Input_Field"
+                android:drawableStart="@drawable/ic_pen"
+                android:hint="@string/hint_note"
+                android:textColorHint="@color/text_secondary"
+                android:inputType="textCapSentences" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                style="@style/Save_Button.Transaction" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

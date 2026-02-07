@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DARK MODE - SEMANTIC TOKEN OVERRIDES -->
+    <!-- These override the light mode semantic tokens defined in values/colors.xml -->
+    <!-- They reference the dark raw color palette (dark_grey_*, dark_green_*, dark_red_*) -->    <!-- Backgrounds & Surfaces (Dark) -->
+    <!-- Using lighter greys for dark mode instead of pitch black for better contrast -->
+    <color name="background_light">@color/dark_grey_100</color>
+    <color name="background_app">@color/dark_grey_100</color>
+    <color name="background_input">@color/dark_grey_200</color>
+    <color name="surface_white">@color/dark_grey_200</color>
+    <color name="surface_muted">@color/dark_grey_300</color>
+    <color name="surface_card">@color/dark_grey_200</color>
+    <color name="error_banner_bg">@color/dark_red_50</color>
+    <color name="back_button_bg">@color/dark_grey_400</color>
+    <color name="back_button_icon">@color/white</color>
+
+    <!-- Text Colors (Dark) - White text on dark backgrounds -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">@color/dark_grey_700</color>
+    <color name="text_input">#FFFFFF</color>
+    <color name="text_hint">@color/dark_grey_600</color>
+    <color name="income_text">@color/dark_green_500</color>
+    <color name="expense_text">@color/dark_red_500</color>
+    <color name="error_banner_text">@color/dark_red_500</color>
+
+    <!-- Brand / Primary (Dark) -->
+    <color name="primary_green">@color/dark_green_500</color>
+    <color name="primary_green_dark">@color/dark_green_600</color>
+
+    <!-- Status & Feedback (Dark) -->
+    <color name="error_red">@color/dark_red_500</color>
+    <color name="income_bg">@color/dark_green_50</color>
+    <color name="expense_bg">@color/dark_red_50</color>
+
+    <!-- Navigation (Dark) -->
+    <color name="nav_icon_default">@color/dark_grey_600</color>
+    <color name="nav_icon_active">@color/dark_green_500</color>    <!-- Borders & Dividers (Dark) -->
+    <color name="border_light">@color/dark_grey_300</color>
+    <color name="border_default">@color/dark_grey_400</color>
+    <color name="divider_color">@color/dark_grey_400</color><!-- Icons (Dark) -->
+    <color name="icon_default">@color/dark_grey_700</color>
+    <color name="icon_on_primary">#FFFFFF</color>
+    <color name="menu">#FFFFFF</color>
+
+</resources>

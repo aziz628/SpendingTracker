@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BudgetManger</string>
+
+    <!-- Main/Home Screen errors -->
+    <string name="invalid_username">Nom d\'utilisateur invalide</string>
+    <string name="invalid_password">Le mot de passe doit contenir plus de 5 caractères</string>
+    <string name="login_failed">Échec de la connexion</string>
+
+    <!-- Sign Up Screen -->
+    <string name="signup_title">Créer un compte</string>
+    <string name="signup_subtitle">Commencez votre parcours financier aujourd\'hui</string>
+    <string name="hint_full_name">Nom complet</string>
+    <string name="hint_email">Adresse e-mail</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="signup_button">S\'inscrire</string>
+    <string name="already_have_account">Vous avez déjà un compte ? </string>
+    <string name="sign_in_link">Se connecter</string>
+
+    <!-- Login Screen -->
+    <string name="login_title">Bienvenue</string>
+    <string name="login_subtitle">Connectez-vous pour gérer vos finances</string>
+    <string name="forgot_password_link">Mot de passe oublié ?</string>
+    <string name="login_button">Se connecter</string>
+    <string name="no_account">Vous n\'avez pas de compte ? </string>
+    <string name="signup_link">S\'inscrire</string>
+
+    <!-- Main/Home Screen -->
+    <string name="sub_title">Bienvenue</string>
+    <string name="total_balance_title">SOLDE TOTAL ^</string>
+    <string name="income_stat_label">Revenus</string>
+    <string name="expense_stat_label">Dépenses</string>
+    <string name="transactions_history_title">Historique des transactions</string>
+    <string name="placeholder_balance">2 548,00 $</string>
+    <string name="placeholder_income">2 648,00 $</string>
+    <string name="placeholder_expense">100,00 $</string>
+
+    <!-- Empty transactions State -->
+    <string name="empty_state_no_transactions">Aucune transaction pour le moment</string>
+    <string name="empty_state_add_transaction">Appuyez sur le bouton + pour commencer à suivre\nvos revenus et dépenses.</string>
+    <string name="see_all_transactions">Voir tout</string>
+
+    <!-- Create Transaction Screen -->
+    <string name="add_transaction_title">Ajouter une transaction</string>
+    <string name="toggle_expense">Dépense</string>
+    <string name="toggle_income">Revenu</string>
+    <string name="label_amount">Montant</string>
+    <string name="hint_amount">0,00</string>
+    <string name="label_category">Catégorie</string>
+    <string name="label_date">Date</string>
+    <string name="label_note">Note (Optionnel)</string>
+    <string name="hint_note">Ajouter une note...</string>
+    <string name="save_transaction_button">Enregistrer la transaction</string>
+    <string name="placeholder_date">23/11/2025</string>
+
+    <!-- Update Transaction Screen -->
+    <string name="update_transaction_title">Mettre à jour la transaction</string>
+
+    <!-- Categories Screen -->
+    <string name="categories_page_title">Catégories</string>
+
+    <!-- Item Placeholders -->
+    <string name="placeholder_category_name">Nom</string>
+    <string name="placeholder_transaction_name">Upwork</string>
+    <string name="placeholder_transaction_date">15 avr. 2025</string>
+    <string name="placeholder_transaction_amount">+ 950,00 $</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Profil</string>
+    <string name="profile_name_placeholder">Alex Johnson</string>
+    <string name="profile_email_placeholder">alex.johnson@example.com</string>
+    <string name="profile_section_account">PARAMÈTRES DU COMPTE</string>
+    <string name="profile_edit_info">Modifier les informations personnelles</string>
+    <string name="profile_change_password">Changer le mot de passe</string>
+    <string name="profile_section_preferences">PRÉFÉRENCES D\'APPLICATION</string>
+    <string name="profile_theme">Theme</string>
+    <string name="profile_language">Langue</string>
+    <string name="profile_language_value">Français</string>
+
+    <!-- Profile Update Strings -->
+    <string name="edit_profile_title">Modifier les informations personnelles</string>
+    <string name="change_password_title">Changer le mot de passe</string>
+    <string name="hint_new_name">Nouveau nom</string>
+    <string name="hint_new_email">Nouvel e-mail</string>
+    <string name="hint_new_password">Nouveau mot de passe</string>
+    <string name="hint_confirm_password">Confirmer le mot de passe</string>
+    <string name="btn_save_info">Enregistrer les informations</string>
+    <string name="btn_update_password">Mettre à jour le mot de passe</string>
+
+    <!-- Result Messages -->
+    <string name="msg_update_success">Profil mis à jour avec succès</string>
+    <string name="msg_password_success">Mot de passe modifié avec succès</string>
+    <string name="error_update_failed">Échec de la mise à jour du profil</string>
+    <string name="error_password_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="error_insufficient_balance">Solde insuffisant pour cette action</string>    <!-- Saripaar Error Tokens -->
+    <string name="validation_name_required">Le nom est requis</string>
+    <string name="validation_email_invalid">Format d\'e-mail invalide</string>
+    <string name="validation_password_short">Le mot de passe doit contenir au moins 6 caractères</string>
+    
+    <!-- Saripaar Custom Messages (for validation) -->
+    <string name="saripaar_amount_required">Le montant est requis</string>
+    <string name="saripaar_amount_min">Le montant doit être supérieur à 0</string>
+    <string name="saripaar_name_required">Le nom ne peut pas être vide</string>
+    <string name="saripaar_name_length">Le nom doit contenir 2 à 50 caractères</string>
+    <string name="saripaar_email_empty">L\'e-mail ne peut pas être vide</string>
+    <string name="saripaar_email_invalid">Veuillez entrer un e-mail valide</string>
+    <string name="saripaar_password_empty">Le mot de passe ne peut pas être vide</string>
+    <string name="saripaar_password_min">Le mot de passe doit contenir au moins 6 caractères</string>
+    <string name="saripaar_confirm_password_empty">Veuillez confirmer votre mot de passe</string>
+    <string name="saripaar_new_password_required">Un nouveau mot de passe est requis</string>
+    <string name="saripaar_passwords_not_match">Les mots de passe ne correspondent pas</string>
+    <string name="saripaar_category_required">La catégorie est requise</string>
+    <string name="saripaar_description_required">La description est requise</string>
+    <string name="saripaar_date_required">La date est requise</string>
+    
+    <!-- SERVICE LAYER MESSAGES -->
+    
+    <!-- Auth Service -->
+    <string name="error_invalid_credentials">Identifiants invalides</string>
+    <string name="error_user_exists">Un utilisateur existe déjà avec cet e-mail</string>
+    <string name="error_registration_failed">Échec de l\'inscription</string>
+    
+    <!-- Category Service -->
+    <string name="error_create_category_failed">Échec de la création de la catégorie</string>
+    <string name="error_category_not_found">Catégorie non trouvée</string>
+    <string name="error_delete_category_balance">Impossible de supprimer la catégorie, le solde deviendrait négatif</string>
+    <string name="msg_category_deleted">Catégorie supprimée avec succès</string>
+    <string name="error_delete_category_failed">Échec de la suppression de la catégorie</string>
+    
+    <!-- Transaction Service -->
+    <string name="error_insufficient_balance_amount">Solde insuffisant. Solde actuel: %.2f €</string>
+    <string name="error_create_transaction_failed">Échec de la création de la transaction</string>
+    <string name="error_transaction_not_found">Transaction non trouvée</string>
+    <string name="error_update_transaction_failed">Échec de la mise à jour de la transaction</string>
+    <string name="msg_transaction_deleted">Transaction supprimée avec succès</string>
+    <string name="error_delete_transaction_failed">Échec de la suppression de la transaction</string>
+    
+    <!-- User Service -->
+    <string name="error_email_exists">L\'e-mail existe déjà</string>
+    <string name="msg_user_updated">Utilisateur mis à jour avec succès</string>
+    <string name="msg_password_updated">Mot de passe mis à jour avec succès</string>
+    
+    <!-- ACTIVITY UI MESSAGES -->
+    
+    <string name="msg_transaction_saved">Transaction enregistrée avec succès!</string>
+    <string name="msg_no_transactions">Aucune transaction pour le moment. Commencez par en ajouter une!</string>
+    <string name="error_delete_transaction_prefix">Échec de la suppression de la transaction: %s</string>
+    <string name="error_prefix">Erreur: %s</string>
+    <string name="msg_already_here">Déjà ici</string>
+    <string name="msg_edit_prefix">Modifier: %s</string>
+    <string name="msg_forgot_password_placeholder">La fonction de réinitialisation du mot de passe arrive bientôt</string>
+    <string name="msg_transaction_deleted_success">Transaction supprimée avec succès</string>
+    <string name="error_no_categories_available">Aucune catégorie disponible pour %s</string>
+      <!-- Category/Transaction Types -->
+    <string name="type_income">revenu</string>
+    <string name="type_expense">dépense</string>
+      <!-- Popup Menu Actions -->
+    <string name="action_edit">Modifier</string>
+    <string name="action_delete">Supprimer</string>
+    
+    <!-- Theme Selection -->
+    <string name="theme_selection_title">Sélectionner le thème</string>
+    <string name="theme_system">Par défaut du système</string>
+    <string name="theme_light">Mode clair</string>
+    <string name="theme_dark">Mode sombre</string>    <string name="btn_apply_theme">Appliquer</string>
+    <string name="category_icon">Icône de catégorie</string>
+    
+    <!-- Currency Format -->
+    <string name="currency_format">$%.2f</string>
+    
+    <!-- Language Selection -->
+    <string name="language_selection_title">Sélectionner la langue</string>
+    <string name="btn_apply_language">Appliquer</string>
+    <string name="language_english">Anglais</string>
+    <string name="language_french">Français</string>
+    <string name="language_arabic">العربية</string>
+
+    <!-- default categories -->
+    <string name="default_category_food">Nourriture</string>
+    <string name="default_category_transport">Transport</string>
+    <string name="default_category_shopping">Achats</string>
+    <string name="default_category_salary">Salaire</string>
+    <string name="default_category_freelance">Freelance</string>
+    <string name="default_category_other">Autre</string>
+
+    <!-- Category Management -->
+    <string name="add_category_title">Créer une catégorie</string>
+    <string name="update_category_title">Modifier la catégorie</string>
+    <string name="label_icon">Choisir une icône</string>
+    <string name="label_category_name">Nom de la catégorie</string>
+    <string name="btn_create_category">Créer la catégorie</string>
+    <string name="btn_update_category">Modifier la catégorie</string>
+    <string name="msg_category_created">Catégorie créée avec succès</string>
+    <string name="msg_category_updated">Catégorie mise à jour avec succès</string>
+    <string name="msg_all_categories_created">Toutes les catégories disponibles ont été créées</string>
+    <string name="hint_category_name">Saisir le nom de la catégorie</string>
+    <string name="saripaar_category_name_required">Le nom de la catégorie est obligatoire</string>    <!-- Stats Activity Strings -->
+    <string name="transactions_over_time_title">Transactions dans le temps</string>
+    <string name="category_distribution_title">Répartition par catégorie</string>
+    <string name="pie_chart_placeholder">Le graphique circulaire apparaîtra ici</string>
+    <string name="line_chart_placeholder">Le graphique linéaire apparaîtra ici</string>
+    <string name="chart_title_income">Revenus par catégorie</string>
+    <string name="chart_title_expense">Dépenses par catégorie</string>
+    <string name="graph_title_income">Tendances des revenus mensuels</string>
+    <string name="graph_title_expense">Tendances des dépenses mensuelles</string>
+    <string name="graph_title_both">Revenus vs Dépenses mensuels</string>
+    <string name="no_chart_data">Aucune donnée disponible pour le graphique</string>
+    <string name="no_graph_data">Aucune donnée disponible pour le graphique</string>
+    <string name="legend_title">Légende</string>
+    <string name="stats_title">Statistiques</string>
+    <string name="toggle_both">Les deux</string>
+    <string name="no_data_available">Aucune transactions disponible</string>
+
+</resources>

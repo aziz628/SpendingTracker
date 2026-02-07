@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/Page_Container"
+    tools:context=".activities.UpdateCategoryActivity">
+
+    <!-- Top Navigation -->
+    <ImageView
+        android:id="@+id/back_button"
+        style="@style/Back_Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_title"
+        style="@style/Page_Title"
+        android:text="@string/update_category_title"
+        app:layout_constraintBottom_toBottomOf="@id/back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_button" />
+
+    <!-- Form Content (No Toggle, No Icon Spinner) -->
+    <ScrollView
+        style="@style/Form_ScrollView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back_button"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout style="@style/Form_Content">
+
+            <!-- Service Error Banner -->
+            <TextView
+                android:id="@+id/form_service_error"
+                style="@style/Error_Banner" />
+
+            <!-- Icon Selection Grid -->
+            <TextView style="@style/Field_Label"
+                android:text="@string/label_icon" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/icons_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm"
+                android:layout_marginBottom="@dimen/spacing_md"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3" />
+
+            <TextView
+                android:id="@+id/icon_error"
+                style="@style/Error_Text" />
+
+            <!-- Category Name Input -->
+            <TextView style="@style/Field_Label"
+                android:text="@string/label_category_name" />
+
+            <EditText
+                android:id="@+id/name_input"
+                style="@style/Input_Field"
+                android:drawableStart="@drawable/ic_pen"
+                android:hint="@string/hint_category_name"
+                android:inputType="textCapWords" />
+
+            <TextView
+                android:id="@+id/name_error"
+                style="@style/Error_Text" />
+
+            <!-- Submit Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/update_button"
+                style="@style/Save_Button"
+                android:text="@string/btn_update_category" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

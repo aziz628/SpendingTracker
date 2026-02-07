@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing Tokens -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_2xl">48dp</dimen>
+
+    <!-- Component Specific Dimens -->
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="logo_size">80dp</dimen>
+    <dimen name="icon_button_size">48dp</dimen>
+    <dimen name="icon_container_size">48dp</dimen>
+    <dimen name="icon_size">35dp</dimen>
+    <dimen name="category_item_size">140dp</dimen>
+    <dimen name="category_icon_container">50dp</dimen>
+    <dimen name="category_icon_size">40dp</dimen>
+    <dimen name="toggle_button_height">44dp</dimen>
+    <dimen name="balance_text_size">50sp</dimen>
+    <dimen name="stat_icon_wrapper">40dp</dimen>
+    <dimen name="stat_icon_size">20dp</dimen>
+    <dimen name="item_margin">10dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_30">30dp</dimen>
+    <dimen name="profile_avatar_size">90dp</dimen>
+    <dimen name="switch_size">40dp</dimen>
+
+    <!-- Navigation Dimens -->
+    <dimen name="nav_height">70dp</dimen>
+    <dimen name="nav_item_size">45dp</dimen>
+    <dimen name="nav_add_btn_size">55dp</dimen>
+    <dimen name="nav_add_icon_size">30dp</dimen>
+    
+    <!-- Elevation -->
+    <dimen name="elevation_sm">4dp</dimen>
+    <dimen name="elevation_lg">12dp</dimen>
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">12dp</dimen>
+    <dimen name="radius_lg">16dp</dimen>
+    <dimen name="radius_xl">24dp</dimen>
+    <dimen name="radius_round">45dp</dimen>
+
+    <!-- Font Sizes -->
+    <dimen name="text_xs">12sp</dimen>
+    <dimen name="text_sm">14sp</dimen>
+    <dimen name="text_md">16sp</dimen>
+    <dimen name="text_lg">18sp</dimen>
+    <dimen name="text_xl">24sp</dimen>
+
+    <!-- Standard activity margins -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Dialog and form elements -->
+    <dimen name="radio_button_height">56dp</dimen>
+
+</resources>

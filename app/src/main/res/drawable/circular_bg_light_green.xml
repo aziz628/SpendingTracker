@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- a light green(#ecfdf5)  circle drawable -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/income_bg"/>
+    <size android:width="@dimen/stat_icon_wrapper" android:height="@dimen/stat_icon_wrapper"/>
+    <corners android:radius="@dimen/radius_round"/>
+</shape>    

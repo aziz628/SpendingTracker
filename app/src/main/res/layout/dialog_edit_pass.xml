@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_bottom_sheet">
+
+    <!-- bottom sheet title -->
+    <TextView
+        style="@style/Empty_State_Title"
+        android:text="@string/change_password_title" />
+
+    <!-- form error banner -->
+    <TextView
+        android:id="@+id/sheet_error_text_password"
+        style="@style/Error_Banner"
+        android:layout_marginTop="@dimen/spacing_md"
+        tools:text="Password update failed"
+        tools:visibility="visible" />
+
+    <!-- new password input field -->
+    <EditText
+        android:id="@+id/new_password"
+        style="@style/Input_Field"
+        android:layout_marginTop="20dp"
+        android:hint="@string/hint_new_password"
+        android:inputType="textPassword" />
+
+    <!-- new password error message -->
+    <TextView
+        android:id="@+id/new_password_error"
+        style="@style/Error_Text"
+        tools:visibility="visible"
+        tools:text="error" />
+
+    <!-- confirm password input field -->
+    <EditText
+        android:id="@+id/confirm_password"
+        style="@style/Input_Field"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hint_confirm_password"
+        android:inputType="textPassword" />
+
+    <!-- confirm password error message -->
+    <TextView
+        android:id="@+id/confirm_password_error"
+        style="@style/Error_Text" />
+
+    <!-- save button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save_password"
+        style="@style/Save_Button"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:text="@string/btn_update_password" />
+
+</LinearLayout>

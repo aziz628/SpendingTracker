@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Nav_Container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/nav_height</item>
+        <item name="android:background">@drawable/bottom_nav_bg</item>
+        <item name="android:paddingHorizontal">@dimen/spacing_lg</item>
+    </style>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <!-- Category Icon -->
+    <ImageView
+        android:id="@+id/legend_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_category_other"
+        android:contentDescription="@string/category_icon" />
+
+    <!-- Category Name and Amount Container -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">        <!-- Category Name -->
+        <TextView
+            android:id="@+id/legend_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category Name"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary" />
+
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/legend_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>    <!-- Percentage -->
+    <TextView
+        android:id="@+id/legend_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="12sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginStart="8dp"
+        android:minWidth="32dp"
+        android:gravity="end" />
+
+</LinearLayout>

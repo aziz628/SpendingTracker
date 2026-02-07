@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    tools:context=".activities.SignUpActivity"
+    tools:padding="@dimen/spacing_lg">
+
+    <LinearLayout style="@style/Container_Auth_Main"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout style="@style/Logo_Wrapper">
+            <ImageView
+                android:id="@+id/logo_image"
+                style="@style/Logo_Icon"
+                android:contentDescription="@string/app_name" />
+        </FrameLayout>
+
+        <TextView style="@style/Title_Centered" />
+
+        <TextView style="@style/Subtitle_Centered" />
+
+        <LinearLayout style="@style/Form_Container">
+
+            <TextView
+                android:id="@+id/signup_form_error"
+                style="@style/Error_Banner"
+                tools:text="User already exists with this email"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/fullname_input"
+                style="@style/Input_Field"
+                android:drawableStart="@drawable/ic_person_outline"
+                android:hint="@string/hint_full_name"
+                android:inputType="textPersonName"
+                />
+
+            <TextView
+                android:id="@+id/signup_name_error"
+                style="@style/Error_Text" tools:visibility="visible" tools:text="error"/>
+
+            <EditText
+                android:id="@+id/signup_email_input"
+                style="@style/Input_Field"
+                android:drawableStart="@drawable/ic_mail_outline"
+                android:hint="@string/hint_email"
+                android:textDirection="locale"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/signup_email_error"
+                style="@style/Error_Text"
+                tools:visibility="visible"
+                tools:text="error"/>
+
+            <EditText
+                android:id="@+id/signup_password_input"
+                style="@style/Input_Field"
+                android:drawableStart="@drawable/ic_lock_outline"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textDirection="locale"
+                />
+
+            <TextView
+                android:id="@+id/signup_password_error"
+                style="@style/Error_Text.Last" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup_button"
+                style="@style/Save_Button"
+                android:text="@string/signup_button" />
+
+            <LinearLayout style="@style/Bottom_Link_Container">
+                <TextView style="@style/Link_Text"
+                android:layout_marginEnd="@dimen/spacing_sm"
+                />
+                <TextView
+                    android:id="@+id/login_link"
+                    style="@style/Link_Text.Action" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
