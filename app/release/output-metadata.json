@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.budgetmanger",
+  "applicationId": "com.example.spendingtracker",
   "variantName": "release",
   "elements": [
     {
