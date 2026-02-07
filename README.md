@@ -1,4 +1,4 @@
-# BudgetManager
+# Spending Tracker
 
 Native Android application built for personal expense tracking and financial management.
 
