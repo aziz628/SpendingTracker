@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BudgetManger</string>
+    <string name="app_name">Spending Tracker</string>
 
     <!-- Main/Home Screen errors -->
     <string name="invalid_username">Nom d\'utilisateur invalide</string>

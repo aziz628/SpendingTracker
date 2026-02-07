@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">مدير الميزانية</string>
+    <string name="app_name">تتبع المصاريف</string>
 
     <!-- Main/Home Screen errors -->
     <string name="invalid_username">اسم مستخدم غير صحيح</string>
