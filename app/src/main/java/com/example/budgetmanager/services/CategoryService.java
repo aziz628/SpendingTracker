@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.example.budgetmanager.R;
 import com.example.budgetmanager.database.DatabaseHelper;
+import com.example.budgetmanager.database.DatabaseHelper.CategoryType;
 import com.example.budgetmanager.database.dao.CategoryDao;
 import com.example.budgetmanager.database.dao.UserDao;
 import com.example.budgetmanager.dto.requests.CreateCategoryRequest;
@@ -96,7 +97,7 @@ public class CategoryService {
         double total = categoryDao.getTotalTransactionsPerCategory(id);
 
         // check if removing income category make  balance negative
-        if (category.getType().equals(context.getString(R.string.type_income))) {
+        if (category.getType().equals(CategoryType.INCOME)) {
             if(balance - total < 0){
                 return Result.error(context.getString(R.string.error_delete_category_balance));
             }
